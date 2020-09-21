@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webdev</title>
-    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,7 +22,9 @@
                         <a href="#" class="header__item-link">Syllabus</a>
                     </li>
                     <li class="header__item">
-                        <img src="assets/images/logo.svg" alt="logo">
+                        <a href="#" class="header__item-link">
+                            <img src="assets/images/logo.svg" alt="logo">
+                        </a>
                     </li>
                     <li class="header__item">
                         <a href="#" class="header__item-link">Projects</a>
@@ -41,8 +43,8 @@
         <!-- Intro -->
         <section class="intro">
             <div class="intro__inner">
-                <h1 class="intro__title title">your life is WebDev</h1>
-                <p class="intro__text text">Whatever the approach to development may be, the final program must satisfy
+                <h1 class="intro__title">your life is WebDev</h1>
+                <p class="intro__text">Whatever the approach to development may be, the final program must satisfy
                     some fundamental properties</p>
                 <a href="#" class="intro__button btn">get started</a>
                 <div class="intro__social">
@@ -77,14 +79,16 @@
         <section class="represent">
             <div class="container">
                 <div class="represent__inner">
-                    <h2 class="represent__title title">Rappresent your idea with
-                        a smart Design</h2>
-                    <p class="represent__text">Tasks accompanying and related to programming include: testing,
-                        debugging, source code maintenance, implementation of build systems, and management of derived
-                        artifacts, such as the machine code of computer programs. </p>
-                    <a href="#" class="represent__btn btn">get started</a>
+                    <div class="represent__inner-box">
+                        <h2 class="represent__title title">Rappresent your idea with
+                            a smart Design</h2>
+                        <p class="represent__text text">Tasks accompanying and related to programming include: testing,
+                            debugging, source code maintenance, implementation of build systems, and management of derived
+                            artifacts, such as the machine code of computer programs. </p>
+                        <a href="#" class="represent__btn btn">get started</a>  
+                    </div>
+                    <img src="assets/images/content1.jpg" alt="" class="represent__photo">
                 </div>
-                <img src="assets/images/content1.jpg" alt="" class="represent__photo">
             </div>
         </section>
         <!-- ../Represent -->
@@ -106,7 +110,7 @@
                         <div class="community__slider-inner">
                             <div class="community__slider-top">
                                 <a href="#" class="community__slider-btn">
-                                    <img class="community__slider-arrowLeft" src="assets/images/arrow-right.svg"
+                                    <img class="community__slider-arrowLeft" src="assets/images/arrow-left.svg"
                                         alt="arrow">
                                 </a>
                                 <span class="community__slider-span">1/5</span>
@@ -143,11 +147,11 @@
             <div class="container">
                 <div class="code__inner">
                     <img class="code__inner-img" src="assets/images/content2.jpg" alt="coding">
-                </div>
-                <div class="code__inner-box">
-                    <h2 class="code__inner-title title">Implement right code</h2>
-                    <p class="code__inner-text text"></p>
-                    <a href="#" class="btn">get started</a>
+                    <div class="code__inner-box">
+                        <h2 class="code__inner-title title">Implement right code</h2>
+                        <p class="code__inner-text text">These might be considered part of the programming process, but often the term software development is used for this larger process with the term programming, implementation</p>
+                        <a href="#" class="btn code__btn">Learn more</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -160,11 +164,13 @@
                     <form class="newsletter__form">
                         <label for="newsletter" class="newsletter__form-label">
                             sign up for our newsletter
-                            <input type="email" id="newsletter">
+                        </label>
+                        <div class="form__inner">
+                            <input class="newsletter__form-input" placeholder="E-mail" type="email" id="newsletter">
                             <a href="#" class="newsletter-btn">
                                 <img src="assets/images/check.svg" alt="submit" class="newsletter-btn-img">
                             </a>
-                        </label>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -176,8 +182,7 @@
             <div class="container">
                 <div class="download__inner">
                     <h2 class="download__title title">Download the App</h2>
-                    <p class="download__text text">Machine code was the language of early programs, written in the
-                        instruction set of the particular machine, often in binary notation.</p>
+                    <p class="download__text text">Machine code was the language of early programs, written in the instruction set of the particular machine, often in binary notation.</p>
                     <div class="download__btn">
                         <a href="#" class="download__btn-appleStore">apple store</a>
                         <a href="#" class="download__btn-android">play market</a>
@@ -191,7 +196,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__container">
+        <div class="container">
             <div class="footer__inner">
                 <div class="footer__info">
                     <span>Credits</span>

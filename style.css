@@ -1,5 +1,514 @@
+:root {
+    --dark-blue: #009CC2;
+    --light-blue: #00AFDB;  
+    --title-color: #373737;
+    --text-color: #4E4E4E;
+    --padding: 110px;
+}
+
+*{
+    padding:0; margin:0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, 
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: white;
+    min-width: 1600px;
+    max-width: 1600px;
+}
+
 .container {
-    max-width: 1100px;
+    max-width: 1310px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15.4px 43px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: var(--light-blue);
+    transition: background-color .2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--title-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.header {
+    position: absolute;
+    color: white;
+    min-width: 100%;
+}
+
+.header__inner {
+    padding: 25px;
+    padding-top: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header__item {
+    padding-right: 85px;
+}
+
+.header__item-link {
+    opacity: .8;
+    transition: all .2s;
+}
+
+.header__item-link:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.header__item:nth-child(1) {
+    padding-left: 70px;
+    padding-right: 91px;
+}
+
+.header__item:nth-child(2) {
+    padding-right: 106px;
+}
+
+.header__item:nth-child(3) {
+    padding-right: 110px;
+}
+
+.intro {
+    padding-top: 100px;
+    background-image: url(assets/images/intro-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.intro__inner {
+    padding-top: 120px;
+    padding-bottom: 84px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__title {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 64px;
+    color: white;
+    letter-spacing: 4.45px;
+    line-height: 75px;
+}
+
+.intro__text {
+    padding-top: 23px;
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-bottom: 27.8px;
+    font-size: 18px;    
+    letter-spacing: 0px;
+    line-height: 140%;
+    font-family: Roboto;
+    color: white;
+    max-width: 500px;
+}
+
+.intro__button {
+    margin-bottom: 185px;
+}
+
+.intro__social-list {
+    display: flex;
+}
+
+.intro__social-link {
+    margin: 15px;
+}
+
+.represent__inner {
+    padding: 129px 110.1px 140px 109px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.represent__inner-box {
+    margin-bottom: 17px;
+    padding-right: 253px;
+}
+
+.represent__title {
+    max-width: 364px;
+    letter-spacing: .8786px;
+    margin-bottom: -5px;
+    margin-top: 15px;
+}
+
+.represent__text {
+    margin-top: 20px;
+    min-width: 402px;
+    margin-bottom: 17px;
+    line-height: 140%;
+}
+
+.represent__btn  {
+    margin-top: 13px;
+}
+
+.community {
+    position: relative;
+}
+
+.community__hacker {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 93px;
+}
+
+.community__inner {
+    padding-left: var(--padding);
+    padding-top: 62px;
+    padding-bottom: 140px;
+    display: flex;
+}
+
+.community__hacker-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.community__hacker-title {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+
+.community__hacker-text {
+    line-height: 143%;
+    text-align: center;
+    padding-right: 2px;
+}
+
+.community__slider {
+    position: absolute;
+    right: 0;
+}
+
+.community__slider-inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.community__slider-top {
+    margin-top: 20px;
+    padding-left: 277px;
+}
+
+.community__slider-top span {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    line-height: 100%;
+    font-weight: 400;
+    padding-right: 7px;
+    padding-left: 14px;
+    letter-spacing: 2.3px;
+}
+
+.community__slider-inner {
+    display: flex;  
+}
+
+.community__slider-down {
+    margin-top: 20px;
+}
+
+.community__slider-list {
+    display: flex;
+}
+
+.community__slider-item {
+    margin-right: 30px;
+}
+
+.community__slider-item:nth-child(3) {
+    max-width: 20px;
+    overflow: hidden;
+    margin-right: 0;
+}
+
+.code__inner {
+    padding-top: 154px;
+    padding-left: var(--padding);
+    padding-bottom: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.code__inner-box {
+    max-width: 542px;
+    padding-left: 138px;
+    margin-top: -10px;
+}
+
+.code__inner-title {
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.code__inner-text {
+    margin-bottom: 19px;
+}
+
+.code__btn {
+    padding: 13px 41px;
+    margin-top: 11px;
+}
+
+.newsletter {
+    background-image: url('assets/images/newsletter-bg.png');
+    background-position: top;
+    background-size: cover;
+}
+
+.newsletter__inner {
+    padding-top: 199px;
+    padding-bottom: 220px;
+}
+
+.newsletter__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter__form-label {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 28.5px;
+    letter-spacing: 1px;
+}
+
+.form__inner {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter__form-input {
+    padding: 14px 24px;
+    min-width: 340px;
+    border: none;
+    background-color: white;
+    color: var(--title-color);
+    font-size: 14px;
+    line-height: 140%;
+    font-family: 'Roboto';
+
+}
+
+.newsletter__form-input:focus {
+    outline: none;
+}
+
+.newsletter__form-input::placeholder {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.newsletter-btn {
+    background-color: var(--light-blue);
+    transition: .2s ease-in-out;
+}
+
+.newsletter-btn:hover {
+    background-color: var(--dark-blue);
+}
+
+.newsletter-btn-img {
+    padding: 15px 25px;
+}
+
+.download__inner {
+    padding: 120px 0 196px 0;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.download__title  {
+    margin-bottom: 19px;
+}
+
+.download__text {
+    max-width: 480px;
+    text-align: center;
+    margin-bottom: 48.5px;
+}
+
+.download__btn a {
+    padding: 15px 18px;
+    background-color: var(--light-blue);
+    color: white;
+    transition: .2s ease-in-out;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 14px;
+    position: relative;
+}
+
+.download__btn a:hover {
+    background-color: var(--dark-blue);
+}
+
+.download__btn-appleStore {
+    margin-right: 88px;
+    margin-left: -56px;
+}
+
+.download__btn-appleStore:after,
+.download__btn-android:after {
+    content: '';
+    position: absolute;
+    right: -59px;
+    top: 0;
+    width: 60px;
+    height: 47px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--dark-blue);
+}
+
+.download__btn-appleStore:after {
+    background-image: url('assets/images/icon-apple.svg');
+}
+.download__btn-android:after {
+    background-image: url('assets/images/android-icon.svg');
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer__inner {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__img {
+    padding-right: 49px;
+}
+
+.footer__info {
+    font-size: 14px;
+}
+
+.footer__info,
+.footer__copy {
+    margin-bottom: 11px;
+}
+
+.footer__copy {
+    color: #818181;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 1px;
+}
+
+.footer__info span:nth-child(2) {
+    padding: 0 20px;
+    border-right: 1px solid #4E4E4E;
+    border-left: 1px solid#4E4E4E;
+}
+
+.footer__info span:nth-child(1) {
+    padding-right: 20px;
+}
+
+.footer__info span:nth-child(3) {
+    padding-left: 20px;
 }
