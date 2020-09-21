@@ -116,11 +116,21 @@ h6 {
 .header__item-link {
     opacity: .8;
     transition: all .2s;
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
 }
 
 .header__item-link:hover {
-    text-decoration: underline;
+    border-color: white;
     opacity: 1;
+}
+
+.header__item-img {
+    border: none;
+}
+
+.header__item-img:hover {
+    border: none;
 }
 
 .header__item:nth-child(1) {
@@ -186,6 +196,12 @@ h6 {
 
 .intro__social-link {
     margin: 15px;
+    fill: white;
+    transition: .2s linear;
+}
+
+.intro__social-link:hover {
+    opacity: .7;
 }
 
 .represent__inner {
@@ -281,13 +297,29 @@ h6 {
     font-family: "Roboto", sans-serif;
     line-height: 100%;
     font-weight: 400;
-    padding-right: 7px;
+    /* padding-right: 7px;
     padding-left: 14px;
-    letter-spacing: 2.3px;
+    letter-spacing: 2.3px; */
 }
 
 .community__slider-inner {
     display: flex;  
+}
+
+.community__slider-btn {
+    transition: .2s linear;
+}
+
+.community__slider-span:nth-child(2) {
+    padding-left: 11px;
+}
+
+.community__slider-span:nth-child(4) {
+    padding-right: 4px;
+}
+
+.community__slider-btn:hover {
+    opacity: .6;
 }
 
 .community__slider-down {
@@ -482,6 +514,15 @@ h6 {
     padding-right: 49px;
 }
 
+.footer__logo {
+    transition: .2s linear;
+}
+
+.footer__logo:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
 .footer__info {
     font-size: 14px;
 }
@@ -503,6 +544,15 @@ h6 {
     padding: 0 20px;
     border-right: 1px solid #4E4E4E;
     border-left: 1px solid#4E4E4E;
+}
+
+.footer__info span {
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.footer__info span:hover {
+    color: #ccc;
 }
 
 .footer__info span:nth-child(1) {
